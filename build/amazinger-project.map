@@ -24177,30 +24177,30 @@ ARM.exidx       0x02019ac8      0x190
  .debug_abbrev  0x00002d78       0x14 /opt/devkitpro/libnds/lib/libnds9.a(interruptDispatcher.o)
  .debug_abbrev  0x00002d8c       0xbd /opt/devkitpro/libnds/lib/libnds9.a(timeSupport.o)
 
-.debug_line     0x00000000     0x40e5
+.debug_line     0x00000000     0x40e7
  *(.debug_line)
- .debug_line    0x00000000      0x80c chip8.o
- .debug_line    0x0000080c      0x29f main.o
- .debug_line    0x00000aab      0x246 /opt/devkitpro/libnds/lib/libnds9.a(keys.o)
- .debug_line    0x00000cf1      0xade /opt/devkitpro/libnds/lib/libnds9.a(videoGL.o)
- .debug_line    0x000017cf      0x268 /opt/devkitpro/libnds/lib/libnds9.a(trig.o)
- .debug_line    0x00001a37      0x678 /opt/devkitpro/libnds/lib/libnds9.a(console.o)
- .debug_line    0x000020af      0x29a /opt/devkitpro/libnds/lib/libnds9.a(system.o)
- .debug_line    0x00002349      0x229 /opt/devkitpro/libnds/lib/libnds9.a(touch.o)
- .debug_line    0x00002572      0x253 /opt/devkitpro/libnds/lib/libnds9.a(video.o)
- .debug_line    0x000027c5      0x15d /opt/devkitpro/libnds/lib/libnds9.a(dynamicArray.o)
- .debug_line    0x00002922      0x325 /opt/devkitpro/libnds/lib/libnds9.a(background.o)
- .debug_line    0x00002c47      0x38d /opt/devkitpro/libnds/lib/libnds9.a(initSystem.o)
- .debug_line    0x00002fd4      0x706 /opt/devkitpro/libnds/lib/libnds9.a(fifosystem.o)
- .debug_line    0x000036da      0x223 /opt/devkitpro/libnds/lib/libnds9.a(libnds_exit.arm.o)
- .debug_line    0x000038fd      0x298 /opt/devkitpro/libnds/lib/libnds9.a(interrupts.o)
- .debug_line    0x00003b95       0x97 /opt/devkitpro/libnds/lib/libnds9.a(IntrWait.o)
- .debug_line    0x00003c2c      0x107 /opt/devkitpro/libnds/lib/libnds9.a(mpu_setup.o)
- .debug_line    0x00003d33       0x9d /opt/devkitpro/libnds/lib/libnds9.a(swiSoftReset.o)
- .debug_line    0x00003dd0       0xa5 /opt/devkitpro/libnds/lib/libnds9.a(debugprint.o)
- .debug_line    0x00003e75       0xc5 /opt/devkitpro/libnds/lib/libnds9.a(biosCalls.o)
- .debug_line    0x00003f3a       0xcd /opt/devkitpro/libnds/lib/libnds9.a(interruptDispatcher.o)
- .debug_line    0x00004007       0xde /opt/devkitpro/libnds/lib/libnds9.a(timeSupport.o)
+ .debug_line    0x00000000      0x80e chip8.o
+ .debug_line    0x0000080e      0x29f main.o
+ .debug_line    0x00000aad      0x246 /opt/devkitpro/libnds/lib/libnds9.a(keys.o)
+ .debug_line    0x00000cf3      0xade /opt/devkitpro/libnds/lib/libnds9.a(videoGL.o)
+ .debug_line    0x000017d1      0x268 /opt/devkitpro/libnds/lib/libnds9.a(trig.o)
+ .debug_line    0x00001a39      0x678 /opt/devkitpro/libnds/lib/libnds9.a(console.o)
+ .debug_line    0x000020b1      0x29a /opt/devkitpro/libnds/lib/libnds9.a(system.o)
+ .debug_line    0x0000234b      0x229 /opt/devkitpro/libnds/lib/libnds9.a(touch.o)
+ .debug_line    0x00002574      0x253 /opt/devkitpro/libnds/lib/libnds9.a(video.o)
+ .debug_line    0x000027c7      0x15d /opt/devkitpro/libnds/lib/libnds9.a(dynamicArray.o)
+ .debug_line    0x00002924      0x325 /opt/devkitpro/libnds/lib/libnds9.a(background.o)
+ .debug_line    0x00002c49      0x38d /opt/devkitpro/libnds/lib/libnds9.a(initSystem.o)
+ .debug_line    0x00002fd6      0x706 /opt/devkitpro/libnds/lib/libnds9.a(fifosystem.o)
+ .debug_line    0x000036dc      0x223 /opt/devkitpro/libnds/lib/libnds9.a(libnds_exit.arm.o)
+ .debug_line    0x000038ff      0x298 /opt/devkitpro/libnds/lib/libnds9.a(interrupts.o)
+ .debug_line    0x00003b97       0x97 /opt/devkitpro/libnds/lib/libnds9.a(IntrWait.o)
+ .debug_line    0x00003c2e      0x107 /opt/devkitpro/libnds/lib/libnds9.a(mpu_setup.o)
+ .debug_line    0x00003d35       0x9d /opt/devkitpro/libnds/lib/libnds9.a(swiSoftReset.o)
+ .debug_line    0x00003dd2       0xa5 /opt/devkitpro/libnds/lib/libnds9.a(debugprint.o)
+ .debug_line    0x00003e77       0xc5 /opt/devkitpro/libnds/lib/libnds9.a(biosCalls.o)
+ .debug_line    0x00003f3c       0xcd /opt/devkitpro/libnds/lib/libnds9.a(interruptDispatcher.o)
+ .debug_line    0x00004009       0xde /opt/devkitpro/libnds/lib/libnds9.a(timeSupport.o)
 
 .debug_frame    0x00000000      0xf5c
  *(.debug_frame)

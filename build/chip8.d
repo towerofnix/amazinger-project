@@ -57,7 +57,7 @@ chip8.o: /opt/devkitpro/amazinger-project/source/chip8.cpp \
  /opt/devkitpro/libnds/include/nds/arm9/trig_lut.h \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
- /opt/devkitpro/amazinger-project/source/chip8.h
+ /opt/devkitpro/amazinger-project/source/chip8.hpp
 
 /opt/devkitpro/libnds/include/nds.h:
 
@@ -175,4 +175,4 @@ chip8.o: /opt/devkitpro/amazinger-project/source/chip8.cpp \
 
 /opt/devkitpro/libnds/include/nds/arm9/videoGL.h:
 
-/opt/devkitpro/amazinger-project/source/chip8.h:
+/opt/devkitpro/amazinger-project/source/chip8.hpp:

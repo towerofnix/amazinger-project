@@ -58,7 +58,7 @@ main.o: /opt/devkitpro/amazinger-project/source/main.cpp \
  /opt/devkitpro/libnds/include/nds/arm9/video.h \
  /opt/devkitpro/libnds/include/nds/arm9/videoGL.h \
  /opt/devkitpro/libnds/include/gl2d.h \
- /opt/devkitpro/amazinger-project/source/chip8.h
+ /opt/devkitpro/amazinger-project/source/chip8.hpp
 
 /opt/devkitpro/libnds/include/nds.h:
 
@@ -178,4 +178,4 @@ main.o: /opt/devkitpro/amazinger-project/source/main.cpp \
 
 /opt/devkitpro/libnds/include/gl2d.h:
 
-/opt/devkitpro/amazinger-project/source/chip8.h:
+/opt/devkitpro/amazinger-project/source/chip8.hpp:

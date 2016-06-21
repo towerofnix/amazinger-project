@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <bitset>
 
-#include "chip8.h"
+#include "chip8.hpp"
 
 /* System memory map:
  *

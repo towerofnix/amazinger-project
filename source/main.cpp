@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <gl2d.h>
 
-#include "chip8.h"
+#include "chip8.hpp"
 
 bool keyboardShown = true;
 int keyboardToggled = false;
