@@ -50,7 +50,7 @@ int main(void) {
   unsigned short buffer[size] = {
     /* 200 */ 0x61,0x01,
     /* 202 */ 0xF1,0x29, // load character V1 to I
-    /* 204 */ 0xD0,0x05, // draw sprite at 0, 0
+    /* 204 */ 0xD0,0x05  // draw sprite at 0, 0
   };
 
   chip8::loadProgram(buffer, size);
