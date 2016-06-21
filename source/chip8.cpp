@@ -320,9 +320,9 @@ int chip8::emulateCycle() {
       for (int i = 0; i < bytes; i++) {
         int row = sprite[i];
         iprintf("Render row: ");
-        for (int j = 8; j > 0; j--) {
+        for (int j = 0; j < 8; j++) {
           int pixel = (row & 1 << j) / 1 << j;
-          int px = x + 8 - j;
+          int px = x + 7 - j;
           int py = y + i;
           int index = py * 64 + px;
           gfxBuf[index] ^= pixel;

@@ -5,8 +5,17 @@ TODO: make something to pick from these inside the main program..
 Quick JS script for getting rid of GARBAGE EW
 
 ```js
-  `(code)`
-  .replace(/0x|,|\w+/g,'')
+`(code)`
+.replace(/0x|,|\w+/g,'')
+```
+
+Quick JS script for taking opcodes and making them into stuff you can pass to main.cpp:
+
+```js
+var vals = `(code)`
+.replace(/(\w{1,2})/g, '0x$1,')
+.split(' ')
+console.log(`unsigned int size = ${vals.length*2+4};\nunsigned short buffer[size] = {${vals.join('\n')}};`)
 ```
 
 ------
