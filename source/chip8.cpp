@@ -137,10 +137,15 @@ int chip8::emulateCycle() {
       int pos = (opcode & 0x0F00) / 0x0100;
       int val = V[pos];
       int compare = opcode & 0x0FF;
-      if (val != compare)
-        pc += 4;
-      else
+      iprintf("Comparing NOT V%X (0x%X) with 0x%X..", pos, val, compare);
+      if (val == compare) {
+        iprintf("Same! NOT skipping.\n");
         pc += 2;
+      } else {
+        iprintf("Not the same! Skipping.\n");
+        pc += 4;
+      }
+      break;
     }
 
     case 0x5000: {
@@ -171,6 +176,7 @@ int chip8::emulateCycle() {
       int newVal = val + add;
       V[pos] = newVal;
       iprintf("V%X += V%X (now 0x%X)\n", pos, add, newVal);
+      pc += 2;
       break;
     }
 
@@ -246,8 +252,8 @@ int chip8::emulateCycle() {
           int borrow = val2 < val1;
           V[pos1] = newVal;
           V[15] = borrow;
-          iprintf("V%X (0x%X) = V%X - V%X (0x%X) (now: 0x%X) (borrow: %d)\n",
-                  pos1, val1, pos1, pos2, val2, newVal, borrow);
+          iprintf("V%X (0x%X) = V%X (0x%X) - V%X (now: 0x%X) (borrow: %d)\n",
+                  pos1, val1, pos2, val2, pos1, newVal, borrow);
           break;
         }
 
@@ -319,16 +325,16 @@ int chip8::emulateCycle() {
 
       for (int i = 0; i < bytes; i++) {
         int row = sprite[i];
-        iprintf("Render row: ");
+        // iprintf("Render row: ");
         for (int j = 0; j < 8; j++) {
           int pixel = (row & 1 << j) / 1 << j;
           int px = x + 7 - j;
           int py = y + i;
           int index = py * 64 + px;
           gfxBuf[index] ^= pixel;
-          iprintf(pixel ? "1" : "0");
+          // iprintf(pixel ? "1" : "0");
         }
-        iprintf("\n");
+        // iprintf("\n");
       }
 
       pc += 2;
@@ -357,9 +363,8 @@ int chip8::emulateCycle() {
         case 0x001E: {
           int pos = (opcode & 0x0F00) / 0x0100;
           int val = V[pos];
-          int oldI = I;
           I += val;
-          iprintf("I (0x%X) += V%X (0x%X) (now: 0x%X)", oldI, pos, val, I);
+          iprintf("I += V%X (0x%X) (now: 0x%X)\n", pos, val, I);
           pc += 2;
           break;
         }
